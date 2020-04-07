@@ -4,5 +4,5 @@ compiler:
   - clang
   - gcc
 script:
-  - gcc -o test test.c
-  - ./test
+  - gcc -o C_program C_program.c
+  - ./C_program
