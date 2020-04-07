@@ -1,8 +1,8 @@
-language: c
-sudo: false # only for faster builds
-compiler:
-  - clang
-  - gcc
+language: python
+python:
+  - "2.7"
+cache: pip
+install:
+  - pip install -r requirements.txt
 script:
-  - gcc -o C_program C_program.c
-  - ./C_program
+  - python tests.py
